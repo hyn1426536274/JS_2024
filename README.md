@@ -1,9 +1,19 @@
 # js2024
 
-## Project setup
+## Setup
 ```
 yarn install
 ```
+## Run
+```
+npm run serve
+```
+---
+
+
+
+
+
 
 ### Compiles and hot-reloads for development
 ```
