@@ -1,7 +1,7 @@
 <template>
     <div class="page">
       <h1 data-aos="zoom-in">Singing Voice Conversion</h1>
-      <h3 data-aos="zoom-in">方便的音色转换平台</h3>
+      <h3 data-aos="zoom-in">曲焕新声——方便的音色转换平台</h3>
     </div>
 </template>
 
