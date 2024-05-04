@@ -52,12 +52,12 @@ export default {
     },
     methods: {
         download_platform() {
-            axios.get('file/peoplecode.xls', {   //静态资源文件夹public            
+            axios.get('file/曲焕新声', {   //静态资源文件夹public            
                 responseType: 'blob',
             }).then(response => {
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement('a');
-                let fname = '员工工号.xls';
+                let fname = '曲焕新声';
                 link.href = url;
                 link.setAttribute('download', fname);
                 document.body.appendChild(link);
