@@ -19,7 +19,7 @@
 
         <div class="download_models" data-aos="fade-up">
             <h1>
-                Pretrained Models
+                Existing Models
             </h1>
             <button  v-for="model in models" :key="model.id" class="download_button" @click="download_model(model.url,model.name)">
                 <p class="download_p1">{{ model.name }}</p>
@@ -42,22 +42,22 @@ export default {
     data() {
         return {
             models: [
-                { id: 1, name: 'models1', url: 'models/m1.txt' },
-                { id: 2, name: 'models2', url: 'models/m1.txt' },
-                { id: 3, name: 'models3', url: 'models/m1.txt' },
-                { id: 4, name: 'models4', url: 'models/m1.txt' },
-                { id: 5, name: 'models5', url: 'models/m1.txt' },
+                { id: 1, name: 'Trump', url: 'models/Trump.zip' },
+                { id: 2, name: 'Taylor', url: 'models/Taylor.zip' },
+                { id: 3, name: 'Justin', url: 'models/Justin.zip' },
+                { id: 4, name: 'Adele', url: 'models/Adele.zip' },
+                { id: 5, name: 'Other', url: 'models/Other.zip' },
             ]
         };
     },
     methods: {
         download_platform() {
-            axios.get('file/曲焕新声', {   //静态资源文件夹public            
+            axios.get('file/曲焕新声.exe', {   //静态资源文件夹public            
                 responseType: 'blob',
             }).then(response => {
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement('a');
-                let fname = '曲焕新声';
+                let fname = '曲焕新声.exe';
                 link.href = url;
                 link.setAttribute('download', fname);
                 document.body.appendChild(link);
@@ -72,7 +72,7 @@ export default {
             }).then(response => {
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement('a');
-                let fname = name;
+                let fname = name+'_models.zip';
                 link.href = url;
                 link.setAttribute('download', fname);
                 document.body.appendChild(link);

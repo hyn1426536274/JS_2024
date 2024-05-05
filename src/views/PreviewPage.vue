@@ -1,9 +1,7 @@
 <template>
-    <hr>
-
     <div class="page">
         <div class="bg_img"> 
-            <h1 id="title" data-aos="fade-in">Experiments</h1>
+            <h1 id="title" data-aos="fade-in">Samples</h1>
             <img  src="../assets/bg01.svg" alt="bg"  data-aos="zoom-in"/>
         </div>
         <div class="vedio_contain">
@@ -52,20 +50,6 @@ AOS.init();
 
 export default {
     name: 'PreviewPage',
-    data() {
-        return {
-            list: [
-                {
-                    name: "可惜没如果",
-                    url:
-                        "http://music.163.com/song/media/outer/url?id=399354373.mp3",
-                    img:
-                        "http://p3.music.126.net/QXZRckFTN5375vdQSyG0jA==/109951166919095160.jpg?param=300x300",
-                    singer: "林俊杰",
-                },
-            ],
-        };
-    },
 }
 </script>
 
@@ -100,9 +84,6 @@ export default {
             opacity: 0.3;
         }
     }
-
-
-
     .vedio_contain {
         display: flex;
         justify-content: center;
