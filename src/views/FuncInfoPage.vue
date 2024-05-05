@@ -1,7 +1,7 @@
 <template>
     <hr>
     <div class="page">
-      <h1 id="title" data-aos="fade-in">Functions</h1>
+      <h1 id="title" data-aos="fade-in">Advantages</h1>
       <div class="up_contain">
         <img id="bird_01" class="birds" src="../assets/bird01.svg" alt="bird01" data-aos="zoom-in">
         <img id="bird_02" class="birds" src="../assets/bird02.svg" alt="bird02" data-aos="zoom-in">
